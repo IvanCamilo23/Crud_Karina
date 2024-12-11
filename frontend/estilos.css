@@ -1,0 +1,148 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  --bs-body-line-height: 1.4;
+  --bs-body-bg: var(--bs-gray-100);
+  background-image: url(../img/2149147910.jpg);
+  background-size: cover;
+  /* Hace que la imagen cubra toda la pantalla */
+  background-position: 50 50;
+  /* Centra la imagen */
+  background-repeat: no-repeat;
+  /* Evita que la imagen se repita */
+}
+
+#main {
+  margin: 0 auto;
+  padding: 10px;
+}
+
+#marco {
+  border-radius: 5px;
+  border-style: solid;
+  border-color: gray;
+  background-color: rgb(175, 175, 175);
+  width: 50%;
+  padding: 5px;
+}
+
+.table {
+  --bs-table-color: var(--bs-gray-600);
+  --bs-table-bg: var(--bs-gray-100);
+  --bs-table-border-color: transparent;
+}
+
+.targeta {
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+label {
+  font-weight: bold;
+  padding: 5px;
+}
+
+h1.rr {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: blue;
+
+
+}
+
+.form-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+label {
+  font-size: 1.1rem;
+  display: block;
+  margin: 10px 0 5px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  font-size: 1rem;
+  margin: 5px 0 15px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.message {
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.message.error {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.message.success {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+/* From Uiverse.io by Gaurav-WebDev */
+.button {
+  height: 50px;
+  width: 200px;
+  position: relative;
+  background-color: transparent;
+  cursor: pointer;
+  border: 2px solid #252525;
+  overflow: hidden;
+  border-radius: 30px;
+  color: #000000;
+  transition: all 0.5s ease-in-out;
+}
+
+.btn-txt {
+  z-index: 1;
+  font-weight: 800;
+  letter-spacing: 4px;
+}
+
+.type1::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: all 0.5s ease-in-out;
+  background-color: #2f84f3;
+  border-radius: 30px;
+  visibility: hidden;
+  height: 10px;
+  width: 10px;
+  z-index: -1;
+}
+
+.button:hover {
+  box-shadow: 1px 1px 200px #252525;
+  color: #090909;
+  border: none;
+}
+
+.type1:hover::after {
+  visibility: visible;
+  transform: scale(100) translateX(2px);
+}
